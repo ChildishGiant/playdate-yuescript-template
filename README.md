@@ -1,2 +1,2 @@
-# Hexagain
+# playdate-yuescript-template
 

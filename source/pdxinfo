@@ -1,0 +1,5 @@
+name=YourGame
+author=YourName
+description=YourDescription
+bundleID=com.github.YourUsername.YourGame
+version=0.0.1

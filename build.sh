@@ -7,7 +7,7 @@ import "CoreLibs/sprites"
 import "CoreLibs/timer"
 import "CoreLibs/crank"' > tmpfile && cat source/main.lua >> tmpfile && mv tmpfile source/main.lua
 # Replace requires with imports
-sed -i 's/require/import/g' source/main.lua
+find source/*.lua -exec sed -i 's/require/import/g' {} +
 echo "Imports added"
 # Compile pdx
 pdc ./source build

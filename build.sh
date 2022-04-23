@@ -11,6 +11,6 @@ import "CoreLibs/sprites"
 import "CoreLibs/timer"
 import "CoreLibs/crank"' > tmpfile && cat source/main.lua >> tmpfile && mv tmpfile source/main.lua
 # Replace requires with imports
-find source/*.lua -exec sed -i 's/require/import/g' {} +
+find source/ -type f -name "*.lua" -exec sed -i 's/require/import/g' {} +
 # Compile pdx
 pdc --skip-unknown --quiet ./source build  # Don't copy source files to build

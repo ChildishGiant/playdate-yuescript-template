@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Wipe compiled lua
-rm ./source/*.lua -f # -f to surpress output
+find ./source/ -type f -name "*.lua" -exec rm {} +
 # Compile yue to lua
 yue ./source/yue -t ./source/
 # Add imports
